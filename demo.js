@@ -130,7 +130,7 @@ function demo_spearfish_packet(spearfish_message) {
 ci.on("message", (message) => {
 	if (message.type == "fishCaught") {
 		demo_fish_packet(message);
-	} else if (message.type == 'actorControlSelf' && message.opcode == 356 && message.parsedIpcData.category == 109) {
+	} else if (message.type == 'actorControlSelf' && message.parsedIpcData.category == 109) {
 		demo_spearfish_packet(message);
 	} else {
 		// console.log(message.type);
